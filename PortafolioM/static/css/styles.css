@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body, .text, .list-unstyled {
+    font-family: "Courier Prime", monospace;
+    font-weight: 100%;
+    font-style: italic;
+    color: #fbf3f3;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    transition: background-position 0.5s ease, filter 0.5s ease;
+    overflow: hidden; /* Asegura que no haya desplazamiento no deseado */
+}
+
+body:hover {
+    background-position: center 15%; /* Ajusta la posición del fondo para un ligero movimiento vertical */
+    filter: brightness(1.1); /* Ajusta el efecto hover para aumentar el brillo */
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Agrega aquí cualquier otro estilo necesario */
